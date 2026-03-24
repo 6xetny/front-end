@@ -1,0 +1,14 @@
+#titulo
+{
+    color:darkblue;
+    text-align: center;
+}
+.texto
+{
+    color:darkgreen;
+    font-size: 20px;
+}
+body
+{
+background-color: lightyellow;
+}
