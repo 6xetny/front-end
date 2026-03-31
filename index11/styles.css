@@ -1,0 +1,37 @@
+#titulo
+{
+    color:darkblue;
+    text-align: center;
+}
+.texto
+{
+    color:darkgreen;
+    font-size: 20px;
+}
+.tarjeta {
+    background-color: lightgray;
+    padding: 20px;
+}
+.destacado {
+    color:red;
+    font-weight: bold;
+}
+.caja {
+    background-color: lightyellow;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid goldenrod;
+    margin: 20px;
+    border-radius: 8px;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+body
+{
+background-color: lightyellow;
+}
