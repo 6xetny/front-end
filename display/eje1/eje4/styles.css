@@ -1,0 +1,14 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: lightgray;
+}
+.item {
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+    margin: 10px;
+}
