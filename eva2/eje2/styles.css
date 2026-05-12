@@ -1,0 +1,17 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.caja {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+h1 {
+    color: darkblue;
+}

@@ -1,0 +1,15 @@
+.bloque {
+    display: block;
+    background-color: rgb(196, 167, 5);
+}
+.inline {
+    display: inline;
+    background-color: lightblue;
+}
+.inlineblock {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: lightgreen;
+    margin: 5px;
+}
