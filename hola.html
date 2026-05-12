@@ -1,11 +1,101 @@
+--eje 1
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Página principal</title>
+</head>
+<body>
+    <h1>Página principal</h1>
+    <p>Bienvenido a mi sitio web.</p>
+    <a href="https://www.inacap.cl">Visitar INACAP</a>
+    <br><a href="contacto.html">Ir a la página de contacto</a>
+</body>
+</html>
+
+--css
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+--eje2 
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Imagenes en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Página con audio</title>
 </head>
 <body>
-    <h1>mi primera imagen</h1>
-    <img src="https://media.tenor.com/bDwmNO94j8AAAAAM/chicharito-free-fire.gif" alt="Imagen de un paisaje">
+    <div class="caja">
+        <h1>Audio de bienvenida</h1>
+        <p>Presiona play para escuchar el mensaje.</p>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio
+        </audio>
+    </div>
 </body>
 </html>
+
+--CSS eje 2
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.caja {
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+--eje 3 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Uso de Display Flex</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="item">Audios</div>
+        <div class="item">Imágenes</div>
+        <div class="item">Videos</div>
+    </div>
+</body>
+</html>
+
+--css eje 3
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.item {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
