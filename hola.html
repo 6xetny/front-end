@@ -1,101 +1,38 @@
---eje 1
+--html
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <title>Página principal</title>
+    <title>Ejercicios JavaScript - Rúbrica</title>
+    
+    <script src="ejercicio1.js" defer></script>
+    <script src="ejercicio2.js" defer></script>
+    <script src="ejercicio3.js" defer></script>
 </head>
 <body>
-    <h1>Página principal</h1>
-    <p>Bienvenido a mi sitio web.</p>
-    <a href="https://www.inacap.cl">Visitar INACAP</a>
-    <br><a href="contacto.html">Ir a la página de contacto</a>
+    <h1>Resolución de Ejercicios</h1>
+    <p>Presiona F12 o haz clic derecho -> Inspeccionar, y abre la pestaña "Consola" para ver los resultados.</p>
 </body>
 </html>
 
---css
-a {
-    color: blue;
-    text-decoration: none;
-}
 
-a:hover {
-    color: red;
-}
+--javascript
+console.log("--- EJERCICIO 1 ---");
 
---eje2 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Página con audio</title>
-</head>
-<body>
-    <div class="caja">
-        <h1>Audio de bienvenida</h1>
-        <p>Presiona play para escuchar el mensaje.</p>
-        <audio controls>
-            <source src="audio.mp3" type="audio/mpeg">
-            Tu navegador no soporta audio
-        </audio>
-    </div>
-</body>
-</html>
+// 1. Variables y entrada de datos
+// Usamos const porque estos valores ingresados no los reasignaremos luego[cite: 372].
+const valor1 = Number(prompt("Ingrese el primer valor para el Ejercicio 1:"));
+const valor2 = Number(prompt("Ingrese el segundo valor para el Ejercicio 1:"));
 
---CSS eje 2
-body {
-    background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-}
+// 2. Cálculos
+// Aquí reemplazarás la suma por la fórmula que corresponda (promedio, área, descuento, etc.)
+let resultado = valor1 + valor2; 
 
-.caja {
-    background-color: white;
-    width: 400px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid gray;
-    border-radius: 10px;
-}
+// 3. Uso de toFixed()
+// Formateamos el resultado para que tenga, por ejemplo, 2 decimales[cite: 295].
+let resultadoFormateado = resultado.toFixed(2);
 
-h1 {
-    color: darkblue;
-}
-
---eje 3 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Uso de Display Flex</title>
-</head>
-<body>
-    <div class="contenedor">
-        <div class="item">Audios</div>
-        <div class="item">Imágenes</div>
-        <div class="item">Videos</div>
-    </div>
-</body>
-</html>
-
---css eje 3
-.contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    background-color: lightgray;
-}
-
-.item {
-    background-color: darkblue;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-}
+// 4. Salida en consola
+// Concatenamos el texto con la variable usando el operador "+"[cite: 651].
+console.log("El resultado del cálculo es: " + resultadoFormateado);
