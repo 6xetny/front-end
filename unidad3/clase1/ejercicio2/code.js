@@ -246,10 +246,35 @@ while (_num < 10)
 */
 
 //Ejercicio
-
+/*
 let _num = Number(prompt("Numero:"))
 
 for (let _mult = 1;_mult <= 10;_mult++)
 {
     console.log(_num+"x"+_mult+" = "+_num*_mult)
 }
+*/
+// ejercicio 2 
+let _num2 = (Number(prompt("ingrese numeros:")))
+
+let contador = 0;
+let suma = 0;
+let promedio = 0;
+
+while (true) {
+    suma += _num2;
+    if (_num2 === 0) {
+       promedio = suma / contador; 
+       break;
+    }
+    else {
+        _num2 = (Number(prompt("ingrese numeros:")))
+        contador++;
+        
+    
+    }
+}
+
+console.log("Cantidad de numeros ingresados: " + contador);
+console.log("Suma de los numeros ingresados: " + suma);
+console.log("Promedio de los numeros ingresados: " + promedio.toFixed(2));
