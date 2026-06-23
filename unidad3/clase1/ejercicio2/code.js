@@ -254,7 +254,9 @@ for (let _mult = 1;_mult <= 10;_mult++)
     console.log(_num+"x"+_mult+" = "+_num*_mult)
 }
 */
+
 // ejercicio 2 
+/*
 let _num2 = (Number(prompt("ingrese numeros:")))
 
 let contador = 0;
@@ -278,3 +280,27 @@ while (true) {
 console.log("Cantidad de numeros ingresados: " + contador);
 console.log("Suma de los numeros ingresados: " + suma);
 console.log("Promedio de los numeros ingresados: " + promedio.toFixed(2));
+*/
+
+//ejercicio 3 caja registradora
+let _productos= Number(prompt("Ingrese la cantidad de productos:"));
+let precioCaro = 0;
+let precioBarato = 0;
+let total = 0;
+
+for (let i = 1; i <= _productos; i++) {
+    let precio = Number(prompt("Ingrese el precio del producto " + i + ":"));
+    total += precio;
+    
+    if (i === 1 || precio > precioCaro) {
+        precioCaro = precio;
+    }
+    if (i === 1 || precio < precioBarato) {
+        precioBarato = precio;
+    }
+}
+
+
+console.log("Precio del producto más caro: $" + precioCaro);
+console.log("Precio del producto más barato: $" + precioBarato);
+console.log("Total a pagar: $" + total);
