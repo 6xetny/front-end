@@ -325,6 +325,7 @@ while (saldo > 0) {
 */
 
 //ejercicio 5: adivina el numero
+/*
 let numeroSecreto = Math.floor(Math.random() * 100) + 1; // Genera un número aleatorio entre 1 y 100
 let intentos = 0;
 let adivinado = false;
@@ -341,3 +342,28 @@ while (!adivinado) {
         console.log("El número secreto es menor que " + intento);
     }
 }
+*/
+
+//ejercicio 6: Validador de contraseña
+let mayusculas = 0;
+let minusculas = 0;
+let numeros = 0;
+
+let password = prompt("Ingrese una contraseña (mínimo 8 caracteres, al menos una mayúscula, una minúscula y un número):");
+
+for (let i = 0; i < password.length; i++) 
+    {
+    let caracter = password[i];
+    if (caracter >= 'A' && caracter <= 'Z') {
+        mayusculas++;
+    } else if (caracter >= 'a' && caracter <= 'z') {
+        minusculas++;
+    } else if (caracter >= '0' && caracter <= '9') {
+        numeros++;
+    }
+}
+
+console.log("Contraseña ingresada: " + password);
+console.log("Cantidad de mayúsculas: " + mayusculas);
+console.log("Cantidad de minúsculas: " + minusculas);
+console.log("Cantidad de números: " + numeros);
