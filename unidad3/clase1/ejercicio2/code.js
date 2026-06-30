@@ -283,6 +283,7 @@ console.log("Promedio de los numeros ingresados: " + promedio.toFixed(2));
 */
 
 //ejercicio 3 caja registradora
+/*
 let _productos= Number(prompt("Ingrese la cantidad de productos:"));
 let precioCaro = 0;
 let precioBarato = 0;
@@ -304,3 +305,39 @@ for (let i = 1; i <= _productos; i++) {
 console.log("Precio del producto más caro: $" + precioCaro);
 console.log("Precio del producto más barato: $" + precioBarato);
 console.log("Total a pagar: $" + total);
+*/
+
+//ejercicio 4: cajero automatico
+/*
+let saldo = 1000000;
+let retiro = 0;
+
+while (saldo > 0) { 
+    retiro = Number(prompt("Ingrese el monto a retirar:"));
+    if (retiro <= saldo) {
+        saldo -= retiro;
+        console.log("Retiro exitoso. Su nuevo saldo es: $" + saldo);
+    }
+    else {
+        console.log("Fondos insuficientes.");
+    }
+}
+*/
+
+//ejercicio 5: adivina el numero
+let numeroSecreto = Math.floor(Math.random() * 100) + 1; // Genera un número aleatorio entre 1 y 100
+let intentos = 0;
+let adivinado = false;
+
+while (!adivinado) {
+    let intento = Number(prompt("Adivina el número secreto (entre 1 y 100):"));
+    intentos++;
+    if (intento === numeroSecreto) {
+        adivinado = true;
+        console.log("¡Felicidades! Adivinaste el número secreto en " + intentos + " intentos.");
+    } else if (intento < numeroSecreto) {
+        console.log("El número secreto es mayor que " + intento);
+    } else {
+        console.log("El número secreto es menor que " + intento);
+    }
+}
